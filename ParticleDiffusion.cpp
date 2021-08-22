@@ -149,7 +149,6 @@ void ParticleDiffusion::Init(){
 
 	NDissBuffer = double(BufferMolecules.size())*dtInnSec*1e-9*kDissBuffer; // per time step
 
-	pDissGFP = 10.0*kAssociationBuffer*pow(10.0, -pKGFP)*dtInnSec*1e-9;
 	pDissGFP = kAssociationBuffer*pow(10.0, -pKGFP)*dtInnSec*1e-9;
 
 	CaptureHOHInnm = FactorCaptureRadiusProtonOH*0.5*(kProt+kOH);
